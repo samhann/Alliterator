@@ -40,12 +40,6 @@ function synonymized(word)
             var firstSynonyms = thesaurus.find(previousWord);
             var secondSynonyms = thesaurus.find(word);
 
-            console.log("FIRST ::");
-            console.log(firstSynonyms);
-
-            console.log("SECOND ::");
-            console.log(secondSynonyms);
-
 
             for(first in firstSynonyms) {
 

@@ -32,6 +32,7 @@
 
 	function alliterate()
 	{
+
 		 $.ajax({url: "/synonymize", 
 		 		 type : "get",
 		 		 data : { "word" : $("#word").val()},
@@ -52,6 +53,7 @@
 
     }});
 
+    return false;
 	}
 
 	</script>
@@ -63,7 +65,7 @@
         <div class="col-xs-6 col-sm-offset-3">
 
           <h1>Alliterator</h1>
-          <form class="all-form" action="#" onsubmit="alliterate()">
+          <form class="all-form" action="" onsubmit="return alliterate()">
             <div class="form-group">
               <input type="text" class="form-control" id="word" placeholder="Enter phrase to alliterate. Eg:good product">
               <input type="submit" name="name" value="Submit" class="btn btn-primary btn-block">
