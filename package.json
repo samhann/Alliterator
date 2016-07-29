@@ -10,7 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.14.0",
-    "thesaurus": "latest"
+    "thesaurus": "latest",
+    "pos" : "latest"
   },
    "engines" : {
     "node": "4.0.0"
