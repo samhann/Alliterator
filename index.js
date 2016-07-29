@@ -105,4 +105,4 @@ function synonymMatch(word,startingLetter)
 }
 
 app.use(express.static('public'));
-app.listen(process.env.PORT || 80)
+app.listen(process.env.PORT || 3000)
