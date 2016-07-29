@@ -20,6 +20,8 @@ function synonymized(word)
     var currentTag = null;
 
     var returnList = [];
+    var wordHash = {};
+
 
     var words = new pos.Lexer().lex(word);
     var tagger = new pos.Tagger();
@@ -61,7 +63,13 @@ function synonymized(word)
                         var s = splits[split];
 
                         if(s[0] == f[0]) {
-                            returnList.push(f+ " " + s);
+                            var finalWord = f+ " " + s;
+
+                            if(wordHash[finalWord] == undefined) {
+                                returnList.push(finalWord); 
+                                wordHash[finalWord] = true;   
+                            }
+                            
                         }
                     }
                 }
