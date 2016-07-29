@@ -11,5 +11,8 @@
   "dependencies": {
     "express": "^4.14.0",
     "thesaurus": "latest"
+  },
+   "engines" : {
+    "node": "4.0.0"
   }
 }
